@@ -1,0 +1,24 @@
+body {
+  margin: 2rem 5% 2rem 5%;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+nav ul {
+  list-style: none;
+}
+section {
+  display: flex;
+}
+article {
+  flex: 1;
+}
+footer {
+  display: flex;
+}
+footer div {
+  flex: 1;
+}
