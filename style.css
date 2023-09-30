@@ -1,5 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  margin: 2rem 5% 2rem 5%;
+  margin: .5rem 5%;
 }
 h1 {
   font-size: 3rem;
@@ -7,18 +13,44 @@ h1 {
 h2 {
   font-size: 2rem;
 }
-nav ul {
-  list-style: none;
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: .5rem;
 }
+.logo_header {
+  height: 10vh;
+}
+
+nav {
+  background-color: #282a35;
+  padding: .75rem;
+  border-radius: .5rem;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
 section {
   display: flex;
 }
 article {
   flex: 1;
 }
+
 footer {
   display: flex;
 }
 footer div {
   flex: 1;
+}
+.logo_footer {
+  height: 2.5vh;
 }
