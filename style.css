@@ -5,19 +5,24 @@
 }
 
 body {
-  margin: .5rem 5%;
+  margin: 0.5rem 5%;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1.25rem;
+}
+.text {
+  font-family: "Kalam", cursive;
 }
 
 .header {
   display: flex;
   justify-content: center;
-  margin-bottom: .5rem;
 }
 .logo_header {
   height: 10vh;
@@ -25,8 +30,9 @@ h2 {
 
 nav {
   background-color: #282a35;
-  padding: .75rem;
-  border-radius: .5rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
 }
 ul {
   list-style: none;
@@ -45,6 +51,40 @@ article {
   flex: 1;
 }
 
+.banner {
+  position: relative;
+  text-align: left;
+  display: inline-block;
+}
+.banner h1 {
+  position: absolute;
+  left: 1rem;
+  top: 20%;
+}
+
+.banner p {
+  position: absolute;
+  left: 1rem;
+  top: 30%;
+  font-weight: 500;
+  line-height: 1;
+}
+
+#img1 {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  filter: blur(0.0625rem);
+}
+
+.typed-out{
+  overflow: hidden;
+  border-right: .1em solid orange;
+  white-space: nowrap;
+  animation: 
+    typing 2s;
+}
+
 footer {
   display: flex;
 }
@@ -53,4 +93,9 @@ footer div {
 }
 .logo_footer {
   height: 2.5vh;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 54% }
 }
