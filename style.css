@@ -6,6 +6,7 @@
 
 body {
   margin: 0.5rem 5%;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 h1 {
   font-size: 2rem;
@@ -47,14 +48,12 @@ a {
 section {
   display: flex;
 }
-article {
-  flex: 1;
-}
 
 .banner {
   position: relative;
   text-align: left;
   display: inline-block;
+  background: transparent;
 }
 .banner h1 {
   position: absolute;
@@ -77,12 +76,49 @@ article {
   filter: blur(0.0625rem);
 }
 
-.typed-out{
+.typed-out {
   overflow: hidden;
-  border-right: .1em solid orange;
+  border-right: 0.1em solid orange;
   white-space: nowrap;
-  animation: 
-    typing 2s;
+  animation: typing 2s;
+}
+
+.articles {
+  display: grid;
+  margin-inline: auto;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  gap: 1em;
+}
+article {
+  position: relative;
+  flex: 1;
+  border-radius: 1em;
+  box-shadow: none;
+  overflow: hidden;
+  background: white;
+}
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+  padding: 24px;
+}
+article:hover,
+:focus {
+  --img-scale: 1.1;
+  --title-color: #28666e;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
 }
 
 footer {
@@ -96,6 +132,16 @@ footer div {
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 54% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 54.7%;
+  }
+}
+article a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #28666e;
 }
