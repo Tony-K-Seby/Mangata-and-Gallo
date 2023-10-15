@@ -22,6 +22,7 @@ p {
   font-size: 1.1rem;
 }
 
+/* Header section */
 .header {
   display: flex;
   justify-content: center;
@@ -30,6 +31,7 @@ p {
   height: 10vh;
 }
 
+/* Navbar section */
 nav {
   background-color: #282a35;
   padding: 0.75em;
@@ -46,10 +48,10 @@ a {
   color: white;
 }
 
+/* Banner */
 section {
   display: flex;
 }
-
 .banner {
   text-align: left;
   display: inline-block;
@@ -82,6 +84,7 @@ section {
   animation: typing 2s;
 }
 
+/* Cards */
 .articles {
   gap: 24px;
 }
@@ -158,17 +161,21 @@ article:has(:hover, :focus) {
   --title-color: #28666e;
   --link-icon-translate: 0;
   --link-icon-opacity: 1;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px .5em .5em 0px;
 }
 
+/* Footer section */
 footer {
   display: flex;
+  margin: 1em 0 .5em 0;
 }
-footer div {
+footer div{
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 .logo_footer {
-  height: 2.5vh;
+  width: 17em;
 }
 
 @keyframes typing {
